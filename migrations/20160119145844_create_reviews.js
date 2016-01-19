@@ -5,7 +5,6 @@ exports.up = function(knex, Promise) {
     table.string('author');
     table.integer('rating');
     table.integer('movie_id');
-    table.text('description');
   })
 };
 
