@@ -9,7 +9,14 @@ function Reviews(){
 };
 
 
-/* Movies Routes Go Here. */
+var reviewsformovies = function(){ Movies().where('id', req.params.id).first().then(function(result){
+  var x= result;
+  Reviews().where('movie_id', req.params.id). then(function(resultE){
+    return resultE})
+  }
+
+
+
 
 router.get('/', function (req, res, next) {
   res.render('movies/index');
